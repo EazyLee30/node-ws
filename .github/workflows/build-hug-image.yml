@@ -46,7 +46,6 @@ jobs:
           context: .
           push: true
           tags: |
-            # 使用 lowercase_owner 步骤的输出作为仓库所有者
             ghcr.io/${{ steps.lowercase_owner.outputs.OWNER }}/eazy:latest
           labels: |
             org.opencontainers.image.source=https://github.com/${{ github.repository }}
